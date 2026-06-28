@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Paycheck Calculator &mdash; Estimate Your Take-Home Pay (2024)</title>
+  <meta name="description" content="Free paycheck calculator for all 50 US states. Estimate your net take-home pay after federal taxes, Social Security, Medicare, and state income taxes. Updated for 2024.">
+  <link rel="canonical" href="https://paystubguide.pages.dev/calculator.html">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="progress-bar"></div>
+<nav class="navbar"><div class="nav-inner"><a href="/" class="nav-logo"><div class="logo-icon">&#x1F4B5;</div>PayStubGuide</a><ul class="nav-links"><li><a href="paystub/index.html">Pay Stub</a></li><li><a href="taxes/index.html">Taxes</a></li><li><a href="benefits/index.html">Benefits</a></li><li><a href="government/index.html">Government</a></li><li><a href="calculator.html" class="active">Calculator</a></li></ul><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></nav>
+<div class="mobile-menu" id="mobile-menu"><div class="mobile-menu-panel"><div class="mobile-menu-header"><span class="logo">&#x1F4B5; PayStubGuide</span><button class="mobile-menu-close" id="mobile-close">&#215;</button></div><ul class="mobile-nav-links"><li><a href="paystub/index.html">&#x1F4CB; Pay Stub</a></li><li><a href="taxes/index.html">&#x1F9FE; Taxes</a></li><li><a href="benefits/index.html">&#x1F3E5; Benefits</a></li><li><a href="government/index.html">&#x1F3DB;&#xFE0F; Government</a></li></ul></div></div>
+
+<div style="background:linear-gradient(135deg,#0f172a,#1e3a8a);color:white;padding:3rem 1.5rem;text-align:center;">
+  <div style="max-width:700px;margin:0 auto;">
+    <div style="font-size:3rem;margin-bottom:1rem;">&#x1F9EE;</div>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:0.75rem;">Free Paycheck Calculator</h1>
+    <p style="color:#bfdbfe;font-size:1.05rem;">Estimate your take-home pay after all federal and state taxes. Updated for 2024 tax rates.</p>
+  </div>
+</div>
+<div style="background:linear-gradient(135deg,#0f172a,#1e3a8a);line-height:0;"><svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,25 C480,50 960,0 1440,25 L1440,50 L0,50 Z" fill="#f8fafc"/></svg></div>
+
+<div style="text-align:center;padding:1rem;background:#f8fafc;"><span class="ad-label">Advertisement</span><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+
+<section class="section">
+  <div class="section-inner" style="max-width:900px;">
+    <div style="display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:start;">
+      <div>
+        <div class="calc-widget" style="border:2px solid var(--primary);">
+          <h3 style="font-size:1.2rem;">&#x1F4B5; Calculate Your Take-Home Pay</h3>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.25rem;">Enter your gross pay and we'll estimate your take-home after all major taxes.</p>
+
+          <div class="calc-row">
+            <div class="calc-input">
+              <label for="calc-gross">Gross Pay Per Period ($)</label>
+              <input type="number" id="calc-gross" placeholder="e.g. 2500.00" min="0" step="0.01">
+            </div>
+            <div class="calc-input">
+              <label for="calc-freq">Pay Frequency</label>
+              <select id="calc-freq">
+                <option value="weekly">Weekly (52/year)</option>
+                <option value="biweekly" selected>Bi-weekly (26/year)</option>
+                <option value="semimonthly">Semi-monthly (24/year)</option>
+                <option value="monthly">Monthly (12/year)</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc-row">
+            <div class="calc-input">
+              <label for="calc-state">State</label>
+              <select id="calc-state">
+                <option value="al">Alabama</option>
+                <option value="ak">Alaska (no income tax)</option>
+                <option value="az">Arizona</option>
+                <option value="ar">Arkansas</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="ct">Connecticut</option>
+                <option value="de">Delaware</option>
+                <option value="fl">Florida (no income tax)</option>
+                <option value="ga">Georgia</option>
+                <option value="hi">Hawaii</option>
+                <option value="id">Idaho</option>
+                <option value="il">Illinois</option>
+                <option value="in">Indiana</option>
+                <option value="ia">Iowa</option>
+                <option value="ks">Kansas</option>
+                <option value="ky">Kentucky</option>
+                <option value="la">Louisiana</option>
+                <option value="me">Maine</option>
+                <option value="md">Maryland</option>
+                <option value="ma">Massachusetts</option>
+                <option value="mi">Michigan</option>
+                <option value="mn">Minnesota</option>
+                <option value="ms">Mississippi</option>
+                <option value="mo">Missouri</option>
+                <option value="mt">Montana</option>
+                <option value="ne">Nebraska</option>
+                <option value="nv">Nevada (no income tax)</option>
+                <option value="nh">New Hampshire</option>
+                <option value="nj">New Jersey</option>
+                <option value="nm">New Mexico</option>
+                <option value="ny">New York</option>
+                <option value="nc">North Carolina</option>
+                <option value="nd">North Dakota</option>
+                <option value="oh">Ohio</option>
+                <option value="ok">Oklahoma</option>
+                <option value="or">Oregon</option>
+                <option value="pa">Pennsylvania</option>
+                <option value="ri">Rhode Island</option>
+                <option value="sc">South Carolina</option>
+                <option value="sd">South Dakota (no income tax)</option>
+                <option value="tn">Tennessee (no income tax)</option>
+                <option value="tx">Texas (no income tax)</option>
+                <option value="ut">Utah</option>
+                <option value="vt">Vermont</option>
+                <option value="va">Virginia</option>
+                <option value="wa">Washington (no income tax)</option>
+                <option value="wv">West Virginia</option>
+                <option value="wi">Wisconsin</option>
+                <option value="wy">Wyoming (no income tax)</option>
+              </select>
+            </div>
+            <div class="calc-input">
+              <label for="calc-filing">Filing Status</label>
+              <select id="calc-filing">
+                <option value="single">Single</option>
+                <option value="married">Married Filing Jointly</option>
+                <option value="hoh">Head of Household</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="calc-btn" id="calc-btn">Calculate My Take-Home Pay &#x2192;</button>
+
+          <div class="calc-result" id="calc-result">
+            <div class="calc-result-row"><span>Gross Pay</span><span id="r-gross"></span></div>
+            <div class="calc-result-row"><span>Federal Income Tax</span><span id="r-fed"></span></div>
+            <div class="calc-result-row"><span>Social Security (6.2%)</span><span id="r-ss"></span></div>
+            <div class="calc-result-row"><span>Medicare (1.45%)</span><span id="r-med"></span></div>
+            <div class="calc-result-row"><span>State Income Tax</span><span id="r-state"></span></div>
+            <div class="calc-result-row"><span>&#x1F49A; Estimated Take-Home Pay</span><span id="r-net"></span></div>
+          </div>
+          <p style="font-size:0.72rem;color:var(--text-muted);margin-top:0.75rem;line-height:1.5;">* Estimate only. Assumes 2024 standard deduction. Excludes local taxes, pre-tax deductions, additional Medicare tax, and other factors. Not financial advice. Consult a tax professional for precise calculations.</p>
+        </div>
+
+        <div class="ad-in-content" style="margin-top:2rem;"><span class="ad-label">Advertisement</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-top:1.5rem;">
+          <h2 style="font-size:1.2rem;font-weight:800;margin-bottom:1rem;">Understanding Your Results</h2>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:var(--primary-dark);">Why is my take-home pay so much less than my salary?</h3>
+          <p style="font-size:0.9rem;line-height:1.7;color:var(--text-muted);">Most Americans take home 65&ndash;80% of their gross pay. The difference goes to federal taxes (10&ndash;37%), FICA taxes (7.65%), and state taxes (0&ndash;13%). This is why budgeting from your net pay &mdash; not your salary &mdash; is essential.</p>
+          <h3 style="font-size:1rem;font-weight:700;margin:1rem 0 0.5rem;color:var(--primary-dark);">How can I increase my take-home pay?</h3>
+          <p style="font-size:0.9rem;line-height:1.7;color:var(--text-muted);">Adjust your W-4 if you consistently get a large refund. Maximize pre-tax benefits (401k, HSA, FSA) to reduce taxable income. Live in a no-income-tax state if possible (TX, FL, WA, NV, WY, SD, AK, TN, NH).</p>
+        </div>
+      </div>
+
+      <div style="position:sticky;top:80px;display:flex;flex-direction:column;gap:1.25rem;">
+        <div class="sidebar-ad"><span class="sidebar-ad-label">Advertisement</span><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="6666666666"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+        <div class="toc-card">
+          <h4>Quick Links</h4>
+          <ul class="toc-list">
+            <li><a href="paystub/gross-pay.html">&#x2192; What Is Gross Pay?</a></li>
+            <li><a href="paystub/net-pay.html">&#x2192; What Is Net Pay?</a></li>
+            <li><a href="paystub/fica-tax.html">&#x2192; FICA Tax Explained</a></li>
+            <li><a href="taxes/w2-form.html">&#x2192; W-2 Form Guide</a></li>
+            <li><a href="benefits/401k.html">&#x2192; 401(k) Guide</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-ad"><span class="sidebar-ad-label">Advertisement</span><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="7777777777"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-inner"><div class="footer-disclaimer"><strong style="color:#94a3b8;">Disclaimer:</strong> This calculator provides estimates for educational purposes only. Results are based on 2024 federal tax brackets and approximate state rates. Actual withholding depends on your W-4 elections, local taxes, deductions, and other factors. Not tax advice.</div><div class="footer-bottom"><span>&#169; 2024 PayStubGuide</span><div style="display:flex;gap:1.5rem;"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="/">Home</a></div></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
