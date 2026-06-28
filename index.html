@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayStubGuide — Understand Every Line of Your Paycheck</title>
+  <meta name="description" content="Free, plain-English guides to every term on your paycheck, tax forms, employee benefits, and government programs. Trusted by millions of Americans.">
+  <meta name="keywords" content="paycheck guide, pay stub explained, FICA tax, gross pay, net pay, W-2 form, HSA, 401k, Medicare, SSI">
+  <meta property="og:title" content="PayStubGuide — Understand Your Paycheck">
+  <meta property="og:description" content="Plain-English guides to paychecks, taxes, benefits, and government programs.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://paystubguide.pages.dev/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PayStubGuide",
+    "url": "https://paystubguide.pages.dev",
+    "description": "Plain-English guides to paychecks, taxes, benefits, and government programs",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://paystubguide.pages.dev/search.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="logo-icon">&#x1F4B5;</div>
+      PayStubGuide
+    </a>
+    <ul class="nav-links">
+      <li><a href="paystub/index.html">Pay Stub</a></li>
+      <li><a href="taxes/index.html">Taxes</a></li>
+      <li><a href="benefits/index.html">Benefits</a></li>
+      <li><a href="benefits/401k.html">401k</a></li>
+      <li><a href="government/index.html">Government</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile menu">
+  <div class="mobile-menu-panel">
+    <div class="mobile-menu-header">
+      <span class="logo">&#x1F4B5; PayStubGuide</span>
+      <button class="mobile-menu-close" id="mobile-close" aria-label="Close menu">&#215;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="paystub/index.html">&#x1F4CB; Pay Stub Guides</a></li>
+      <li><a href="taxes/index.html">&#x1F9FE; Tax Term Guides</a></li>
+      <li><a href="benefits/index.html">&#x1F3E5; Benefits Explained</a></li>
+      <li><a href="government/index.html">&#x1F3DB;&#xFE0F; Government Programs</a></li>
+      <div class="mobile-nav-divider"></div>
+      <li><a href="calculator.html">&#x1F9EE; Paycheck Calculator</a></li>
+      <li><a href="search.html">&#x1F50D; Search</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">&#x1F1FA;&#x1F1F8; Trusted by Americans in all 50 states</div>
+    <h1>Understand <span>Every Line</span><br>of Your Paycheck</h1>
+    <p>Plain-English guides to every term on your pay stub, tax forms, employee benefits, and government programs. No jargon. No confusion.</p>
+    <div class="hero-search">
+      <input type="text" id="hero-search-input" placeholder='Try "what is FICA" or "HSA vs FSA"...' aria-label="Search guides">
+      <button id="hero-search-btn">Search &#x2192;</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="num" data-target="200" data-suffix="+">0+</span>
+        <span class="label">Free Guides</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num" data-target="2.4" data-suffix="M">0M</span>
+        <span class="label">Monthly Readers</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num" data-target="100" data-suffix="%" data-prefix="">0%</span>
+        <span class="label">Free, Always</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8fafc"/>
+  </svg>
+</div>
+
+<!-- LEADERBOARD AD -->
+<div style="text-align:center; padding: 1.5rem 1rem 0; background: var(--bg);">
+  <span class="ad-label">Advertisement</span>
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- FEATURE STRIP -->
+<section class="feature-strip">
+  <div class="feature-strip-inner">
+    <div class="feature-item fade-up">
+      <div class="feature-icon">&#x1F4D6;</div>
+      <div>
+        <h4>Plain English Only</h4>
+        <p>No finance degree required. We translate every confusing term into words anyone can understand.</p>
+      </div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">&#x1F50D;</div>
+      <div>
+        <h4>Deep, Accurate Guides</h4>
+        <p>Researched against IRS publications, SSA guidelines, and official government sources.</p>
+      </div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">&#x1F9EE;</div>
+      <div>
+        <h4>Free Calculators</h4>
+        <p>Estimate your take-home pay, FICA taxes, and retirement contributions instantly.</p>
+      </div>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">&#x1F4F1;</div>
+      <div>
+        <h4>Works on Any Device</h4>
+        <p>Check your pay stub on your phone at the office, or dive deep on desktop at home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Browse by Topic</span>
+      <h2>What Do You Want to Understand?</h2>
+      <p>Choose a category to explore our full library of guides, written specifically for US workers.</p>
+    </div>
+    <div class="category-grid">
+      <a href="paystub/index.html" class="cat-card fade-up" style="--cat-color:#1a56db; --cat-bg:#eff6ff;">
+        <div class="cat-icon">&#x1F4CB;</div>
+        <h3>Pay Stub Explainers</h3>
+        <p>Decode every line of your paycheck &mdash; gross pay, net pay, deductions, YTD totals and more.</p>
+        <div class="cat-count">&#x1F4C4; 30 guides <span class="cat-arrow">&#x2192;</span></div>
+      </a>
+      <a href="taxes/index.html" class="cat-card fade-up" style="--cat-color:#7c3aed; --cat-bg:#f5f3ff;">
+        <div class="cat-icon">&#x1F9FE;</div>
+        <h3>Tax Term Guides</h3>
+        <p>W-2, 1099, AGI, standard deduction &mdash; every tax term explained in plain language.</p>
+        <div class="cat-count">&#x1F4C4; 25 guides <span class="cat-arrow">&#x2192;</span></div>
+      </a>
+      <a href="benefits/index.html" class="cat-card fade-up" style="--cat-color:#059669; --cat-bg:#ecfdf5;">
+        <div class="cat-icon">&#x1F3E5;</div>
+        <h3>HR Benefits Explained</h3>
+        <p>HSA, FSA, 401(k), PTO, COBRA &mdash; understand every line in your benefits package.</p>
+        <div class="cat-count">&#x1F4C4; 25 guides <span class="cat-arrow">&#x2192;</span></div>
+      </a>
+      <a href="government/index.html" class="cat-card fade-up" style="--cat-color:#dc2626; --cat-bg:#fff1f2;">
+        <div class="cat-icon">&#x1F3DB;&#xFE0F;</div>
+        <h3>Government Programs</h3>
+        <p>Medicare, Medicaid, SSI, SNAP, SSDI &mdash; who qualifies, how to apply, what you receive.</p>
+        <div class="cat-count">&#x1F4C4; 20 guides <span class="cat-arrow">&#x2192;</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- IN-CONTENT AD (Native style) -->
+<div style="background:#f1f5f9; padding: 1rem 1.5rem;">
+  <div style="max-width:1200px; margin:0 auto; text-align:center;">
+    <span class="ad-label">Advertisement</span>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- POPULAR PAY STUB ARTICLES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Most Popular</span>
+      <h2>Pay Stub Questions Americans Ask Most</h2>
+      <p>These are the terms workers Google most often &mdash; and we have the best answers.</p>
+    </div>
+    <div class="articles-grid">
+      <a href="paystub/gross-pay.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#eff6ff; --tag-color:#1a56db;">Pay Stub</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is Gross Pay? Complete Guide</h3>
+          <p>Your gross pay is your total earnings before any taxes or deductions are taken out. Learn why it matters and how to calculate it.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 5 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="paystub/net-pay.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#eff6ff; --tag-color:#1a56db;">Pay Stub</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is Net Pay? Your Take-Home Explained</h3>
+          <p>Net pay is what actually hits your bank account. Discover every deduction that reduces your paycheck.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 4 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="paystub/fica-tax.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#eff6ff; --tag-color:#1a56db;">Pay Stub</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is FICA Tax on My Paycheck?</h3>
+          <p>FICA funds Social Security and Medicare. See exactly how much is withheld and why.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 5 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="paystub/ytd.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#eff6ff; --tag-color:#1a56db;">Pay Stub</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Does YTD Mean on a Pay Stub?</h3>
+          <p>Year-to-Date (YTD) shows your running totals for the year. Here's how to read and use these numbers.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 3 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="paystub/federal-income-tax-withheld.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#eff6ff; --tag-color:#1a56db;">Pay Stub</span>
+        </div>
+        <div class="article-card-body">
+          <h3>Federal Income Tax Withheld: What It Means</h3>
+          <p>Why does your employer take federal tax out of each paycheck? And is your withholding correct?</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 6 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="paystub/social-security-tax.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#eff6ff; --tag-color:#1a56db;">Pay Stub</span>
+        </div>
+        <div class="article-card-body">
+          <h3>Social Security Tax: Rate, Limit &amp; How It Works</h3>
+          <p>6.2% of every paycheck goes to Social Security &mdash; up to a wage cap. Here's the full breakdown.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 5 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="paystub/index.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:var(--primary); color:white; text-decoration:none; padding:0.75rem 1.75rem; border-radius:10px; font-weight:700; transition:var(--transition);" onmouseover="this.style.background='#1e429f'" onmouseout="this.style.background='var(--primary)'">View All Pay Stub Guides &#x2192;</a>
+    </div>
+  </div>
+</section>
+
+<!-- PAYCHECK CALCULATOR TEASER -->
+<section class="section alt-bg">
+  <div class="section-inner">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="section-header" style="margin-bottom:1.5rem;">
+        <span class="section-tag">Free Tool</span>
+        <h2>&#x1F9EE; Paycheck Take-Home Calculator</h2>
+        <p>Estimate your net pay after federal taxes, Social Security, Medicare, and state taxes &mdash; in seconds.</p>
+      </div>
+      <div class="calc-widget">
+        <h3>&#x1F4B5; Calculate Your Take-Home Pay</h3>
+        <div class="calc-row">
+          <div class="calc-input">
+            <label for="calc-gross">Gross Pay Per Period</label>
+            <input type="number" id="calc-gross" placeholder="e.g. 2500" min="0" step="0.01">
+          </div>
+          <div class="calc-input">
+            <label for="calc-freq">Pay Frequency</label>
+            <select id="calc-freq">
+              <option value="weekly">Weekly (52x/year)</option>
+              <option value="biweekly" selected>Bi-weekly (26x/year)</option>
+              <option value="semimonthly">Semi-monthly (24x/year)</option>
+              <option value="monthly">Monthly (12x/year)</option>
+            </select>
+          </div>
+          <div class="calc-input">
+            <label for="calc-state">State</label>
+            <select id="calc-state">
+              <option value="ca">California</option>
+              <option value="tx">Texas (no income tax)</option>
+              <option value="fl">Florida (no income tax)</option>
+              <option value="ny">New York</option>
+              <option value="wa">Washington (no income tax)</option>
+              <option value="il">Illinois</option>
+              <option value="pa">Pennsylvania</option>
+              <option value="oh">Ohio</option>
+              <option value="ga">Georgia</option>
+              <option value="nc">North Carolina</option>
+              <option value="mi">Michigan</option>
+              <option value="nj">New Jersey</option>
+              <option value="va">Virginia</option>
+              <option value="az">Arizona</option>
+              <option value="co">Colorado</option>
+              <option value="mn">Minnesota</option>
+              <option value="wi">Wisconsin</option>
+              <option value="ma">Massachusetts</option>
+              <option value="md">Maryland</option>
+            </select>
+          </div>
+        </div>
+        <button class="calc-btn" id="calc-btn">Calculate My Take-Home Pay &#x2192;</button>
+        <div class="calc-result" id="calc-result">
+          <div class="calc-result-row"><span>Gross Pay</span><span id="r-gross"></span></div>
+          <div class="calc-result-row"><span>Federal Income Tax</span><span id="r-fed"></span></div>
+          <div class="calc-result-row"><span>Social Security (6.2%)</span><span id="r-ss"></span></div>
+          <div class="calc-result-row"><span>Medicare (1.45%)</span><span id="r-med"></span></div>
+          <div class="calc-result-row"><span>State Income Tax</span><span id="r-state"></span></div>
+          <div class="calc-result-row"><span>&#x1F49A; Estimated Take-Home</span><span id="r-net"></span></div>
+        </div>
+        <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.75rem;">*Estimate only. Excludes local taxes, pre-tax deductions (401k, HSA), and other withholdings. Consult a tax professional for exact figures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECTANGLE AD -->
+<div style="text-align:center; padding: 1.5rem;">
+  <span class="ad-label">Advertisement</span>
+  <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- TAX GUIDES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Tax Season Ready</span>
+      <h2>Tax Terms Every American Should Know</h2>
+      <p>From W-2s to AGI &mdash; understand your taxes before they confuse you.</p>
+    </div>
+    <div class="articles-grid">
+      <a href="taxes/w2-form.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#f5f3ff; --tag-color:#7c3aed;">Taxes</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is a W-2 Form? Complete 2024 Guide</h3>
+          <p>Your W-2 reports annual wages and taxes withheld. Learn every box &mdash; from Box 1 to Box 12.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 7 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="taxes/1099-form.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#f5f3ff; --tag-color:#7c3aed;">Taxes</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is a 1099 Form? Freelancer's Guide</h3>
+          <p>Independent contractors get 1099s, not W-2s. Here's what that means for your taxes.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 6 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="taxes/agi.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#f5f3ff; --tag-color:#7c3aed;">Taxes</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is AGI (Adjusted Gross Income)?</h3>
+          <p>AGI determines your eligibility for dozens of deductions and credits. Learn how to find and lower yours.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 5 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="taxes/index.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:#7c3aed; color:white; text-decoration:none; padding:0.75rem 1.75rem; border-radius:10px; font-weight:700; transition:background 0.2s;" onmouseover="this.style.background='#6d28d9'" onmouseout="this.style.background='#7c3aed'">View All Tax Guides &#x2192;</a>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS STRIP -->
+<section class="section alt-bg">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Open Enrollment Season</span>
+      <h2>Benefits Guides: Make Smarter Choices</h2>
+      <p>HSA vs FSA, Roth 401(k) vs Traditional &mdash; these decisions affect thousands of dollars. We simplify them.</p>
+    </div>
+    <div class="articles-grid">
+      <a href="benefits/hsa.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#ecfdf5; --tag-color:#059669;">Benefits</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is an HSA? Health Savings Account Explained</h3>
+          <p>An HSA gives you triple tax benefits for medical expenses. Learn contribution limits, rules, and strategies.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 6 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="benefits/401k.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#ecfdf5; --tag-color:#059669;">Benefits</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is a 401(k)? How Retirement Savings Work</h3>
+          <p>Understanding your 401(k) can be worth tens of thousands of dollars in retirement. Start here.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 8 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="benefits/fsa.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#ecfdf5; --tag-color:#059669;">Benefits</span>
+        </div>
+        <div class="article-card-body">
+          <h3>HSA vs FSA: Key Differences Explained</h3>
+          <p>Both save you money on healthcare &mdash; but the rules are very different. Which one should you choose?</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 5 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="benefits/index.html" style="display:inline-flex; align-items:center; gap:0.5rem; background:#059669; color:white; text-decoration:none; padding:0.75rem 1.75rem; border-radius:10px; font-weight:700; transition:background 0.2s;" onmouseover="this.style.background='#047857'" onmouseout="this.style.background='#059669'">View All Benefits Guides &#x2192;</a>
+    </div>
+  </div>
+</section>
+
+<!-- IN-CONTENT AD -->
+<div style="text-align:center; padding:1.5rem;">
+  <span class="ad-label">Advertisement</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="4444444444" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- GOVERNMENT PROGRAMS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Government Programs</span>
+      <h2>Benefits You May Already Qualify For</h2>
+      <p>Millions of Americans leave money on the table by not knowing their eligibility. Don't be one of them.</p>
+    </div>
+    <div class="articles-grid">
+      <a href="government/medicare.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#fff1f2; --tag-color:#dc2626;">Government</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is Medicare? Parts A, B, C &amp; D Explained</h3>
+          <p>Medicare covers 65 million Americans. Learn the four parts, what each covers, and how to enroll.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 8 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="government/ssi.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#fff1f2; --tag-color:#dc2626;">Government</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is SSI? Eligibility, Amounts &amp; How to Apply</h3>
+          <p>Supplemental Security Income provides monthly cash to low-income elderly and disabled Americans.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 6 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+      <a href="government/snap.html" class="article-card fade-up">
+        <div class="article-card-top">
+          <span class="article-tag" style="--tag-bg:#fff1f2; --tag-color:#dc2626;">Government</span>
+        </div>
+        <div class="article-card-body">
+          <h3>What Is SNAP? Food Stamps Explained for 2024</h3>
+          <p>SNAP (formerly food stamps) helps 42 million Americans afford groceries. See if you qualify and how to apply.</p>
+        </div>
+        <div class="article-card-footer">
+          <span>&#x23F1; 5 min read</span>
+          <span class="read-link">Read guide &#x2192;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST SECTION -->
+<section class="section alt-bg">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Why Trust Us</span>
+      <h2>Written for Real Americans, Not Finance Experts</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1.5rem; max-width:900px; margin:0 auto;">
+      <div style="text-align:center; padding:1.5rem;" class="fade-up">
+        <div style="font-size:2.5rem; margin-bottom:0.75rem;">&#x1F4DA;</div>
+        <h4 style="font-weight:700; margin-bottom:0.4rem;">IRS-Referenced</h4>
+        <p style="font-size:0.875rem; color:var(--text-muted);">All tax information is cross-checked against official IRS publications and updated annually.</p>
+      </div>
+      <div style="text-align:center; padding:1.5rem;" class="fade-up">
+        <div style="font-size:2.5rem; margin-bottom:0.75rem;">&#x1F512;</div>
+        <h4 style="font-weight:700; margin-bottom:0.4rem;">No Ads in Guides</h4>
+        <p style="font-size:0.875rem; color:var(--text-muted);">Our editorial content is 100% independent. We never let advertisers influence our explanations.</p>
+      </div>
+      <div style="text-align:center; padding:1.5rem;" class="fade-up">
+        <div style="font-size:2.5rem; margin-bottom:0.75rem;">&#x1F504;</div>
+        <h4 style="font-weight:700; margin-bottom:0.4rem;">Updated for 2024</h4>
+        <p style="font-size:0.875rem; color:var(--text-muted);">Tax brackets, contribution limits, and benefit amounts are updated every year for accuracy.</p>
+      </div>
+      <div style="text-align:center; padding:1.5rem;" class="fade-up">
+        <div style="font-size:2.5rem; margin-bottom:0.75rem;">&#x1F4AC;</div>
+        <h4 style="font-weight:700; margin-bottom:0.4rem;">Real Questions</h4>
+        <p style="font-size:0.875rem; color:var(--text-muted);">Every guide is built around actual questions Americans search on Google &mdash; not what we think you should know.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER AD (LEADERBOARD) -->
+<div style="text-align:center; padding:1.5rem; background:var(--bg);">
+  <span class="ad-label">Advertisement</span>
+  <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="5555555555"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-disclaimer">
+      <strong style="color:#94a3b8;">Disclaimer:</strong> PayStubGuide provides general educational information about paychecks, taxes, and benefits for informational purposes only. This is not tax, legal, or financial advice. Tax laws change frequently. Always consult a qualified tax professional or financial advisor for advice specific to your situation.
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">&#x1F4B5; PayStubGuide</div>
+        <p>Plain-English guides to every term on your paycheck, tax forms, employee benefits, and government programs. Helping Americans understand their money since 2024.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Pay Stub</h5>
+        <ul>
+          <li><a href="paystub/gross-pay.html">Gross Pay</a></li>
+          <li><a href="paystub/net-pay.html">Net Pay</a></li>
+          <li><a href="paystub/fica-tax.html">FICA Tax</a></li>
+          <li><a href="paystub/ytd.html">YTD Explained</a></li>
+          <li><a href="paystub/index.html">All Pay Stub &#x2192;</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Taxes &amp; Benefits</h5>
+        <ul>
+          <li><a href="taxes/w2-form.html">W-2 Form</a></li>
+          <li><a href="taxes/1099-form.html">1099 Form</a></li>
+          <li><a href="benefits/hsa.html">HSA</a></li>
+          <li><a href="benefits/401k.html">401(k)</a></li>
+          <li><a href="taxes/index.html">All Tax Guides &#x2192;</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Government</h5>
+        <ul>
+          <li><a href="government/medicare.html">Medicare</a></li>
+          <li><a href="government/ssi.html">SSI</a></li>
+          <li><a href="government/snap.html">SNAP</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&#169; 2024 PayStubGuide. All rights reserved.</span>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
